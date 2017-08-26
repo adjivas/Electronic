@@ -86,6 +86,8 @@
    adjivas
 }
 
+\font\musixspx=musixspx
+
 \begin{document}
 
 \begin{titlepage}
@@ -533,7 +535,6 @@ Allez à l'option $File \rightarrow Save$ ou pressez \Ctrl + \keystroke{S} afin 
 
 Allez à $Tool \rightarrow Parameter Manager$, cocher uniquement la case $Parts$ puis valider ; \\
 Allez à l'option $Add column...$ pour ajouter les champs : [$Logical Designator$, $Fabricant$, $RefFabricant$, $Fournisseur$, $RefFournisseur$, $Precison$]. \\
-
 \begin{adjustbox}{max width=14.5cm}
     \setlength{\fboxrule}{1pt}
     \setlength{\fboxsep}{0pt}
@@ -553,9 +554,9 @@ Allez à l'option $Add column...$ pour ajouter les champs : [$Logical Designator
             \multicolumn{4}{c}{\thead{\MakeUppercase{Caracteristic} \\[-10ex]}} \vrule width 1pt &
             \multicolumn{2}{c}{\thead{\MakeUppercase{Fabricant} \\[-10ex]}} \vrule width 1pt &
             \multicolumn{2}{c}{\thead{\MakeUppercase{Fournisseur} \\[-10ex]}} \\[25pt]
-            & \multispan4\mathstrut\hspace{5pt}\downbracefill\hspace{0pt} \vrule width 1pt &
-            \multispan2\mathstrut\hspace{5pt}\downbracefill\hspace{0pt} \vrule width 1pt &
-            \multispan2\mathstrut\hspace{5pt}\downbracefill\hspace{0pt} \\
+            & \multispan4 \thead{\scalebox{1.8}[1]{\rotatebox{270}{\musixspx\char243}}} \vrule width 1pt &
+            \multispan2 \thead{\scalebox{0.9}[1]{\rotatebox{270}{\musixspx\char243}}} \vrule width 1pt &
+            \multispan2 \thead{\scalebox{0.3}[1]{\rotatebox{270}{\musixspx\char243}}} \\
             & \rothead[c]{Logical Designator.} &
             \thead[c]{Comment.} &
             \thead[c]{Footprint.}  &
