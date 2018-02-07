@@ -23,7 +23,7 @@
 \usepackage[labelformat=empty]{caption}
 \usepackage{framed}
 \usepackage{amsmath}
-\usepackage[american voltages,siunitx]{circuitikzgit}
+\usepackage[american voltages,siunitx]{circuitikz}
 \usepackage{paralist}
 \usepackage{listings}
 \usepackage{subcaption}
@@ -431,7 +431,7 @@ Pour le schéma à électrique ci-suivant :
 		\def\qwartz_move{pin_x1}
 		\draw ($(\qwartz_move)+(5,0)$) coordinate (x1) node [anchor=south] {$X_1$} to (x1) to[short,o-] ($(x1)+(2,0)$) to[capacitor,l=$C_{7}$,i=$20pF$] ($(x1)+(4,0)$) to ($(x1)+(4,-3)$) node[ground] {};
 		\draw ($(\qwartz_move)+(5,-1.5)$) coordinate (x2) node [anchor=south] {$X_2$} to (x2) to[short,o-] ($(x2)+(2,0)$) to[capacitor,-*,l=$C_{8}$,i=$20pF$] ($(x2)+(4,0)$);
-		\draw ($(x1)+(1.5,0)$) node [anchor=south] {$2$} coordinate (q1) to[piezoelectric, *-*,l_=$Y1\cdot{}2Hz$] ($(x2)+(1.5,0)$) coordinate (q1) to (q1) node [anchor=north] {$1$};
+%		\draw ($(x1)+(1.5,0)$) node [anchor=south] {$2$} coordinate (q1) to[piezoelectric, *-*,l_=$Y1\cdot{}2Hz$] ($(x2)+(1.5,0)$) coordinate (q1) to (q1) node [anchor=north] {$1$};
 
 
 		\def\program_move{23.25,0}
