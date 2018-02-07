@@ -328,7 +328,7 @@ Pour le schéma à électrique ci-suivant :
 		\draw ($(\move)+(3.25,0)$) coordinate (pic) [thick, fill=black] rectangle ($(pic)+(3,1)$) coordinate (pic) to (pic) node [above left] {PIC - PIC.SchDoc};
 		\draw ($(pic)+(0,-.75)$) coordinate (r) node[anchor=east] {\color{white}\textit{POTARD}} to[short, o-] ($(r)+(1,0)$) coordinate (r) to ($(r)+(0,-3)$) coordinate (r) to ($(r)+(-2,0)$) node[above left] {$R1: 1K$} coordinate (r);
 		\draw ($(r)+(0,1)$) coordinate (r) node [anchor=south] {$V3P3A$} to ($(r)+(0,-.5)$) node[rground,yscale=-1.5] {} to[american potentiometer] ($(r)+(0,-1.5)$) node [ground] {};
-		\draw ($(pic)+(0,-.25)$) coordinate (l) node[anchor=east] {\color{white}\textit{LED$[0..3]$}} to[short, o-, ultra thick] ($(l)+(2,0)$) coordinate (l) node[above left] {$LED[0..3]$} to ($(l)+(0,-4.5)$);
+		\draw ($(pic)+(0,-.25)$) coordinate (l) node[anchor=east] {\color{white}\textit{LED$[0..3]$}} to[short, o-] ($(l)+(2,0)$) coordinate (l) node[above left] {$LED[0..3]$} to ($(l)+(0,-4.5)$);
 		\foreach \L in {0,...,3}
 			\draw ($(\move)+(10,-\L*1.5)$) coordinate (led\L) [thick, fill=black] rectangle ($(led\L)+(3,1)$) coordinate (led\L) to (led\L) node [above left] {LED\L{} - Led.SchDoc};
 		\foreach \L in {0,...,3}
